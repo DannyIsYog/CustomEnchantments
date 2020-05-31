@@ -1,9 +1,0 @@
-name: CustomEnchantments
-version: 1.0-SNAPSHOT
-main: me.dannyisyog.CustomEnchantments
-api-version: 1.13
-description: This is a Minecraft Plugin that adds new enchantments to the game
-commands:
-  ce addTelepathy:
-  ce addTreecapitator:
-  ce:
