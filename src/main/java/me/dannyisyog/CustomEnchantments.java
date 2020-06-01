@@ -1,6 +1,8 @@
 package me.dannyisyog;
 
 import me.dannyisyog.commands.CommandManager;
+import me.dannyisyog.enchantments.builder.Builder;
+import me.dannyisyog.enchantments.builder.BuilderEventHandler;
 import me.dannyisyog.enchantments.telepathy.Telepathy;
 import me.dannyisyog.enchantments.telepathy.TelepathyEventHandler;
 import me.dannyisyog.enchantments.treecapitator.Treecapitator;
@@ -21,10 +23,12 @@ public final class CustomEnchantments extends JavaPlugin {
         //Register the Custom Enchantments
         Telepathy.register();
         Treecapitator.register();
+        Builder.register();
 
         //Register Events
         getServer().getPluginManager().registerEvents(new TelepathyEventHandler(), this);
         getServer().getPluginManager().registerEvents(new TreecapitatorEventHandler(), this);
+        getServer().getPluginManager().registerEvents(new BuilderEventHandler(), this);
 
         //This registers the command manager, don't forget to change the command prefix
         this.getCommand("ce").setExecutor(new CommandManager());

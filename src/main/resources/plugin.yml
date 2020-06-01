@@ -6,4 +6,5 @@ description: This is a Minecraft Plugin that adds new enchantments to the game
 commands:
   ce addTelepathy:
   ce addTreecapitator:
+  ce addBuild:
   ce:

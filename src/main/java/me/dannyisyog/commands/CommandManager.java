@@ -1,6 +1,7 @@
 package me.dannyisyog.commands;
 
 import me.dannyisyog.commands.SubCommand;
+import me.dannyisyog.commands.subcommands.AddBuild;
 import me.dannyisyog.commands.subcommands.AddTelepathy;
 import me.dannyisyog.commands.subcommands.AddTreecapitator;
 import org.bukkit.command.Command;
@@ -17,6 +18,7 @@ public class CommandManager implements CommandExecutor {
     public CommandManager() {
         subcommands.add(new AddTelepathy());
         subcommands.add(new AddTreecapitator());
+        subcommands.add(new AddBuild());
     }
 
     @Override
